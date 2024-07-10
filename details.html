@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Back to school</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="details.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="details.js" defer></script>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="title">
+			<img class="round" src="https://i.pinimg.com/474x/64/6e/cd/646ecdcc0bc922739d206b9c4a752fa1.jpg">
+			<h1>Đồ dùng học tập</h1>
+		</div>
+		<div class="btn">
+			<button type="button" class="store">&#127978 Trở về cửa hàng</button>
+			<button type="button" class="checkout">&#128722 Giỏ hàng</button>
+		</div>
+	</div>
+	<div id="details-container">
+		<div id="details">
+			<h2>Thông tin khách hàng</h2>
+			<form onsubmit="return false">
+				<input id="name" placeholder="Tên" type="text" pattern="[^\p{P}\p{S}\p{N}]*" required>
+				<br>
+				<input id="address" placeholder="Địa chỉ giao hàng" type="text" pattern="[^\p{P}\p{S}]*" required>
+				<br>
+				<input id="phoneNumber" placeholder="Số điện thoại" type="text" pattern="0[0-9]*" minlength="10"
+					maxlength="10" required>
+				<br>
+				<p><b><i>Đặt hàng thành công</i></b></p>
+				<button id="order">Đặt hàng</button>
+			</form>
+		</div>
+	</div>
+	<div class="bottom-bar">
+		<h2>Liên lạc với chúng tôi qua các mạng xã hội:</h2>
+		<br>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+	</div>
+</body>
+
+</html>

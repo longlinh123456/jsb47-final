@@ -1,0 +1,50 @@
+#details-container {
+	margin: 10vh 0 10vh 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#details {
+	width: 25vw;
+	height: fit-content;
+	background-color: white;
+	text-align: center;
+}
+
+#details input {
+	width: 80%;
+	outline: none;
+	border-radius: 12px;
+	margin: 5px auto;
+	padding: 5px 5px 5px 5px;
+	border: 1px cornflowerblue solid;
+	font-weight: bolder;
+}
+
+#details input:valid {
+	background-color: rgba(125, 218, 125, 0.659);
+}
+
+#details input:invalid {
+	background-color: rgba(215, 94, 94, 0.692);
+}
+
+#details input::placeholder {
+	color: black;
+}
+
+#details button {
+	background-color: cornflowerblue;
+	font-weight: 600;
+	padding: 4px 4px;
+	margin: 5px 5px
+}
+
+#details form p b i {
+	display: none;
+}
+
+.bottom-bar {
+	margin: 39vh 0 0 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Back to school</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="checkout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="checkout.js" defer></script>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="title">
+			<img class="round" src="https://i.pinimg.com/474x/64/6e/cd/646ecdcc0bc922739d206b9c4a752fa1.jpg">
+			<h1>Đồ dùng học tập</h1>
+		</div>
+		<div class="btn">
+			<button type="button">&#127978 Trở về cửa hàng</button>
+		</div>
+	</div>
+	<div id="checkout-container">
+		<div id="checkout">
+			<div class="title">
+				<h2>Giỏ hàng</h2>
+			</div>
+			<div class="list-container">
+				<table id="list">
+					<tr>
+						<th>
+							<h2>Ảnh</h2>
+						</th>
+						<th>
+							<h2>Tên mặt hàng</h2>
+						</th>
+						<th>
+							<h2>Giá</h2>
+						</th>
+						<th>
+							<h2>Số lượng</h2>
+						</th>
+					</tr>
+				</table>
+			</div>
+			<div class="bottom-container">
+				<p><b><i>Chỉ có thể đặt 5 sản phẩm cùng loại</i></b></p>
+				<button class="clear" type="button">Xóa giỏ hàng</button>
+				<button class="details" type="button">Thanh toán</button>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-bar">
+		<h2>Liên lạc với chúng tôi qua các mạng xã hội:</h2>
+		<br>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+	</div>
+	<template id="checkout-template">
+		<tr class="remove">
+			<td class="image"><img src="">
+			</td>
+			<td class="title">
+				<p></p>
+			</td>
+			<td class="price">
+				<h3></h3>
+			</td>
+			<td class="quantity">
+				<input type="number" name="quantity" min="1" max="5" value="1" onkeydown="return false">
+			</td>
+			<td class="remove">
+				<button type="button">&#10006</button>
+			</td>
+		</tr>
+	</template>
+</body>
+
+</html>

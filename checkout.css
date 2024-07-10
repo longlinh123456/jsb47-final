@@ -1,0 +1,107 @@
+#checkout-container {
+	margin: 10vh 0 10vh 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#checkout {
+	width: 50vw;
+	height: 80vh;
+	background-color: white;
+}
+
+#checkout .title {
+	text-align: center;
+	margin: 5px 0 5px 0;
+}
+
+#checkout .bottom-container {
+	text-align: center;
+}
+
+#checkout .bottom-container .clear,
+#checkout .bottom-container .details {
+	background-color: cornflowerblue;
+	font-weight: 600;
+	padding: 8px 8px;
+	margin: 5px 5px
+}
+
+
+/* Checkout List */
+
+#list {
+	width: 95%;
+}
+
+#checkout .list-container {
+	height: 75%;
+	width: 100%;
+	overflow-y: auto;
+}
+
+table {
+	margin: 2.5% 2.5%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid;
+	padding: 5px 5px
+}
+
+tr td.image {
+	text-align: center;
+	width: 20%;
+}
+
+tr td.image img {
+	max-width: 98%;
+	max-height: 98%;
+}
+
+tr td.title {
+	text-align: left;
+	overflow-wrap: break-word;
+	width: 45%
+}
+
+tr td.price {
+	width: 20%;
+	text-align: center;
+}
+
+tr td.quantity {
+	width: 13%;
+	text-align: center;
+}
+
+tr td.quantity input {
+	padding: 5px 5px;
+	border: black 2px solid;
+	border-radius: 7px;
+}
+
+tr td.remove {
+	border: none;
+	width: 2%;
+	padding: 0 0;
+}
+
+tr td.remove button {
+	margin: 7px 7px
+}
+
+tr td.quantity input::-webkit-inner-spin-button,
+tr td.quantity input::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+.bottom-bar {
+	margin: 15vh 0 0 0;
+	height: 15vh;
+	background-color: cornflowerblue;
+	text-align: center;
+}
